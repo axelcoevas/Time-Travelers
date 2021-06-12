@@ -40,11 +40,11 @@ function App() {
           <Route path="/Login">
             <Login />
           </Route>
-          <Route path="/">
-            <Home />
-          </Route>
           <Route path="/CrearCapsula">
             <CrearCapsula />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
         <Footer />

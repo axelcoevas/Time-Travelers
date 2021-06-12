@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGooglePlus, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { auth } from '../firebase'
 import '../static/Login.css'
+import FileUpload from './FileUpload'
 
 function Login() {
   const history = useHistory();
@@ -91,6 +92,7 @@ function Login() {
           </div>
         </div>
       </div>
+      <FileUpload />
     </section >
   )
 }
