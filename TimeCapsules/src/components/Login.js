@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGooglePlus, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { auth } from '../firebase'
+import { db, auth } from '../firebase'
 import '../static/Login.css'
-import FileUpload from './FileUpload'
 
 function Login() {
   const history = useHistory();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('')
-  const [left, setLeft] = useState(false);
+  const [name, setName] = useState('')
+  const [left, setLeft] = useState(false)
 
   const signIn = e => {
     e.preventDefault();
@@ -29,6 +29,11 @@ function Login() {
     auth
       .createUserWithEmailAndPassword(email, password)
       .then((auth) => {
+        return db.collection('users').doc(auth.user.uid).set({
+          name: name
+        })
+      })
+      .then((auth) => {
         if (auth) {
           history.push('/');
         }
@@ -46,7 +51,7 @@ function Login() {
         <div className={`container ${left ? "right-panel-active" : ""}`} id="container">
           <div className="body">
             <div className="form-container sign-up-container">
-              <form class="form" action="#">
+              <form id="signup-form" class="form">
                 <h1>Create Account</h1>
                 <div className="social-container">
                   <a href="#" className="a social"><FontAwesomeIcon icon={faFacebook} /></a>
@@ -54,9 +59,9 @@ function Login() {
                   <a href="#" className="a social"><FontAwesomeIcon icon={faLinkedin} /></a>
                 </div>
                 <span>or use your email for registration</span>
-                <input className="input" type="text" placeholder="Name" />
-                <input className="input" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
-                <input className="input" type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
+                <input id="signup-name" className="input" type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
+                <input id="signup-email" className="input" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
+                <input id="signup-password" className="input" type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
                 <button className="button" onClick={register}>Sign Up</button>
               </form>
             </div>
@@ -92,7 +97,6 @@ function Login() {
           </div>
         </div>
       </div>
-      <FileUpload />
     </section >
   )
 }

@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useSateValue } from '../StateProvider'
-import { auth } from '../firebase'
+import { db, auth } from '../firebase'
 import capsuleLogo from '../resources/Capsula_Logo.png'
 import '../static/Header.css'
 
 function Header() {
-  const [{ basket, user }] = useSateValue();
+  const [{ user }] = useSateValue();
 
   const handleAuthentication = () => {
     if (user) {
