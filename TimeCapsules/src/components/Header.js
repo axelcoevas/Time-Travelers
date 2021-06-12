@@ -22,8 +22,8 @@ function Header() {
             <Link to="/">
               <a class="menu-link">Acerca De</a>
             </Link>
-            <Link to="/login">
-              <a class="menu-link">Login</a>
+            <Link to={user ? "/" : "/login"}>
+              <a onClick={handleAuthentication} class="menu-link">{user ? "Cerrar Sesión" : "Login"}</a>
             </Link>
             <a href="#" class="menu-link">Tutorial</a>
             <a href="crearCapsula.html" class="menu-link">Crear Cápsula</a>

@@ -54,8 +54,8 @@ function Login() {
                 </div>
                 <span>or use your email for registration</span>
                 <input className="input" type="text" placeholder="Name" />
-                <input className="input" type="email" placeholder="Email" />
-                <input className="input" type="password" placeholder="Password" />
+                <input className="input" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
+                <input className="input" type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
                 <button className="button" onClick={register}>Sign Up</button>
               </form>
             </div>
@@ -69,7 +69,7 @@ function Login() {
                 </div>
                 <span>or use your account</span>
                 <input className="input" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
-                <input className="input" type="password" placeholder="Password" />
+                <input className="input" type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
                 <a href="#">Forgot your password?</a>
                 <button type="submit" onClick={signIn} className='button'>Sign in</button>
               </form>
