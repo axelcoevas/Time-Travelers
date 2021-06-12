@@ -2,6 +2,7 @@ import React from 'react';
 import '../static/CrearCapsula.css'
 import 'react-dropzone-uploader/dist/styles.css'
 import Dropzone from 'react-dropzone-uploader'
+// eslint-disable-next-line
 import { firebase, auth, db } from '../firebase'
 
 const MyUploader = () => {

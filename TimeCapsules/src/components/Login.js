@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGooglePlus, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { db, auth } from '../firebase'
 import '../static/Login.css'
-import FileUpload from './FileUpload'
 
 function Login() {
   const history = useHistory();
@@ -55,11 +54,11 @@ function Login() {
               <form id="signup-form" class="form">
                 <h1>Create Account</h1>
                 <div className="social-container">
-                  <span className="a social"><FontAwesomeIcon icon={faFacebook} /></span>
-                  <span className="a social"><FontAwesomeIcon icon={faGooglePlus} /></span>
-                  <span className="a social"><FontAwesomeIcon icon={faLinkedin} /></span>
+                  <span className="a social icon"><FontAwesomeIcon icon={faFacebook} /></span>
+                  <span className="a social icon"><FontAwesomeIcon icon={faGooglePlus} /></span>
+                  <span className="a social icon"><FontAwesomeIcon icon={faLinkedin} /></span>
                 </div>
-                <span>or use your email for registration</span>
+                <span className="span">or use your email for registration</span>
                 <input id="signup-name" className="input" type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
                 <input id="signup-email" className="input" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
                 <input id="signup-password" className="input" type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
@@ -70,14 +69,14 @@ function Login() {
               <form className="form">
                 <h1>Sign in</h1>
                 <div className="social-container">
-                  <span className="a social"><FontAwesomeIcon icon={faFacebook} /></span>
-                  <span className="a social"><FontAwesomeIcon icon={faGooglePlus} /></span>
-                  <span className="a social"><FontAwesomeIcon icon={faLinkedin} /></span>
+                  <span className="a social icon"><FontAwesomeIcon icon={faFacebook} /></span>
+                  <span className="a social icon"><FontAwesomeIcon icon={faGooglePlus} /></span>
+                  <span className="a social icon"><FontAwesomeIcon icon={faLinkedin} /></span>
                 </div>
-                <span>or use your account</span>
+                <span className="span">or use your account</span>
                 <input className="input" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
                 <input className="input" type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
-                <span>Forgot your password?</span>
+                <span className="span">Forgot your password?</span>
                 <button type="submit" onClick={signIn} className='button'>Sign in</button>
               </form>
             </div>
@@ -85,12 +84,12 @@ function Login() {
               <div className="overlay">
                 <div className="overlay-panel overlay-left">
                   <h1>Welcome Back!</h1>
-                  <p>To keep connected with us please login with your personal info</p>
+                  <p className="p">To keep connected with us please login with your personal info</p>
                   <button className="button ghost" onClick={toggleAnimation} id="signIn">Sign In</button>
                 </div>
                 <div className="overlay-panel overlay-right">
                   <h1>Hello, Friend!</h1>
-                  <p>Enter your personal details and start journey with us</p>
+                  <p className="p">Enter your personal details and start journey with us</p>
                   <button className="button ghost" onClick={toggleAnimation} id="signUp">Sign Up</button>
                 </div>
               </div>
@@ -98,7 +97,6 @@ function Login() {
           </div>
         </div>
       </div>
-      <FileUpload />
     </section >
   )
 }

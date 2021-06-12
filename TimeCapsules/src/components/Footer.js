@@ -6,13 +6,13 @@ import '../static/Footer.css'
 function Footer() {
   return (
     <footer>
-      <section class="redes-sociales">
-        <div class="contenedor">
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="twitter"><FontAwesomeIcon icon={faTwitter} /></a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="youtube"><FontAwesomeIcon icon={faYoutube} /></a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="facebook"><FontAwesomeIcon icon={faFacebookF} /></a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="github"><FontAwesomeIcon icon={faGithub} /></a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="instagram"><FontAwesomeIcon icon={faInstagram} /></a>
+      <section className="redes-sociales">
+        <div className="contenedor">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="twitter"><FontAwesomeIcon icon={faTwitter} /></a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="youtube"><FontAwesomeIcon icon={faYoutube} /></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="facebook"><FontAwesomeIcon icon={faFacebookF} /></a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="github"><FontAwesomeIcon icon={faGithub} /></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="instagram"><FontAwesomeIcon icon={faInstagram} /></a>
         </div>
       </section>
     </footer>
