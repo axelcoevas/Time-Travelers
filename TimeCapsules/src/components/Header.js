@@ -17,33 +17,33 @@ function Header() {
   return (
     <div>
       <header>
-        <div class="contenedor">
-          <nav class="menu">
+        <div className="contenedor">
+          <nav className="menu">
             <Link to="/">
-              <span class="menu-link">Acerca De</span>
+              <span className="menu-link">Acerca De</span>
             </Link>
             <Link to={user ? "/" : "/login"}>
-              <span onClick={handleAuthentication} class="menu-link">{user ? "Cerrar Sesión" : "Login"}</span>
+              <span onClick={handleAuthentication} className="menu-link">{user ? "Cerrar Sesión" : "Login"}</span>
             </Link>
-            <span class="menu-link">Tutorial</span>
+            <span className="menu-link">Tutorial</span>
             <Link to="/CrearCapsula">
-              <span class="menu-link">Crear Cápsula</span>
+              <span className="menu-link">Crear Cápsula</span>
             </Link>
-            <span class="menu-link">Red Social</span>
+            <span className="menu-link">Red Social</span>
             <Link to="/">
-              <span class="menu-link">Contacto</span></Link>
+              <span className="menu-link">Contacto</span></Link>
           </nav>
-          <div class="contenedor-texto">
-            <div class="texto">
-              <h1 class="nombre">Time-Travelers</h1>
+          <div className="contenedor-texto">
+            <div className="texto">
+              <h1 className="nombre">Time-Travelers</h1>
             </div>
           </div>
         </div>
       </header>
-      <section class="main">
-        <section class="acerca-de">
-          <div class="contenedor">
-            <div class="foto">
+      <section className="main">
+        <section className="acerca-de">
+          <div className="contenedor">
+            <div className="foto">
               <img src={String(capsuleLogo)} width="150" height="150" alt="Time Travelers" />
             </div>
           </div>
