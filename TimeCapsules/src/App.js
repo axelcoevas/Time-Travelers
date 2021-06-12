@@ -37,14 +37,14 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
+        <Route path="/CrearCapsula">
+            <CrearCapsula />
+          </Route>
           <Route path="/Login">
             <Login />
           </Route>
           <Route path="/">
             <Home />
-          </Route>
-          <Route path="/CrearCapsula">
-            <CrearCapsula />
           </Route>
         </Switch>
         <Footer />
