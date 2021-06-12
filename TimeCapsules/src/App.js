@@ -37,7 +37,7 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-        <Route path="/CrearCapsula">
+          <Route path="/CrearCapsula">
             <CrearCapsula />
           </Route>
           <Route path="/Login">
