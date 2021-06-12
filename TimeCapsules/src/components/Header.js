@@ -30,7 +30,7 @@ function Header() {
               <a class="menu-link">Crear Cápsula</a>
             </Link>
             <a href="#" class="menu-link">Red Social</a>
-            <a href="#" class="menu-link">Contacto</a>
+            <Link to="/"><a class="menu-link">Contacto</a></Link>
           </nav>
           <div class="contenedor-texto">
             <div class="texto">

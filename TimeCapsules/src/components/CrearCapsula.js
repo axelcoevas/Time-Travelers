@@ -2,6 +2,25 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faTwitter, faFacebookF, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import '../static/CrearCapsula.css'
+import 'react-dropzone-uploader/dist/styles.css'
+import Dropzone from 'react-dropzone-uploader'
+
+const MyUploader = () => {
+    const getUploadParams = ({meta}) => {return {url: 'https://httpbin.org/post'}}
+    const handleChangeStatus = ({ meta, file }, status) => { console.log(status, meta, file) }
+    const handleSubmit = (files, allFiles) => {
+        console.log(files.map(f=>f.meta))
+        allFiles.forEach(f=>f.remove())
+    }
+    return(
+        <Dropzone 
+                getUploadParams={getUploadParams}
+                onChangeStatus={handleChangeStatus}
+                onSubmit={handleChangeStatus}
+                accept="image/*,audio/*,video/*,application/pdf,.doc,.docx,.xls,.xlsx,.csv,.tsv,.ppt,.pptx,.pages,.odt,.rtf"
+                />
+    )
+}
 
 function CrearCapsula() {
   return (
@@ -9,8 +28,9 @@ function CrearCapsula() {
         <div className="contenedor-crearCapsula">
             <form className="formulario">
                 <p className="sub_titulo">Crear tu Cápsula del Tiempo: <input type="text" name="titulo" id="titulo"/></p>
+                <p className="sub_mensaje">Sube aquí tus archivos</p>
                 <div className="Dropzone">
-
+                <MyUploader />
                 </div>
                 <p className="sub_mensaje">Mensaje de Entrega:</p>
                 <textarea name="mensaje" id="mensaje" placeholder="Ingresa aquí tu mensaje de entrega"></textarea>

@@ -5,6 +5,8 @@
     overflow: hidden;
 }
 
+
+
 .sub_titulo {
     font-size: 25px;
     margin-top: 100px;
@@ -16,6 +18,10 @@
     display: flex;
     width: 100%;
     align-items: center;
+}
+
+.Dropzone{
+    margin-top: 30px;
 }
 
 .BotonEnv{
@@ -43,14 +49,16 @@
     margin-top: 100px;
     font-weight: bold;
     color: #C25D72;
+    margin-bottom: 20px;
 }
 
 .sub_mensaje{
   margin: auto;
   font-size: 25px;
-    margin-top: 100px;
+    margin-top: 30px;
     font-weight: bold;
     color: #C25D72;
+    margin-bottom: 20px;
 }
 
 .contenedor-crearCapsula .formulario input[type='text'],
