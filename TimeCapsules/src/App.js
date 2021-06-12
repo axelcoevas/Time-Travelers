@@ -6,12 +6,10 @@ import Footer from './components/Footer'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { auth } from './firebase'
 import { useSateValue } from './StateProvider'
-import { loadStripe } from '@stripe/stripe-js';
 import CrearCapsula from './components/CrearCapsula';
 
-const promise = loadStripe('pk_test_51HPvReHXKGZTu1L0SwRw4WF61gMh0ve4jr07OYvzt91KcmWHwcgeuEwSJbFI3eeHU0yN84kwONnJsSQ3wbIEElwV007vtCLA0J');
-
 function App() {
+  // eslint-disable-next-line
   const [{ }, dispatch] = useSateValue();
 
   useEffect(() => {
@@ -30,6 +28,7 @@ function App() {
         })
       }
     })
+    // eslint-disable-next-line
   }, [])
 
   return (

@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGooglePlus, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { db, auth } from '../firebase'
 import '../static/Login.css'
+import FileUpload from './FileUpload'
 
 function Login() {
   const history = useHistory();
@@ -54,9 +55,9 @@ function Login() {
               <form id="signup-form" class="form">
                 <h1>Create Account</h1>
                 <div className="social-container">
-                  <a href="#" className="a social"><FontAwesomeIcon icon={faFacebook} /></a>
-                  <a href="#" className="a social"><FontAwesomeIcon icon={faGooglePlus} /></a>
-                  <a href="#" className="a social"><FontAwesomeIcon icon={faLinkedin} /></a>
+                  <span className="a social"><FontAwesomeIcon icon={faFacebook} /></span>
+                  <span className="a social"><FontAwesomeIcon icon={faGooglePlus} /></span>
+                  <span className="a social"><FontAwesomeIcon icon={faLinkedin} /></span>
                 </div>
                 <span>or use your email for registration</span>
                 <input id="signup-name" className="input" type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
@@ -66,17 +67,17 @@ function Login() {
               </form>
             </div>
             <div className="form-container sign-in-container">
-              <form className="form" action="#">
+              <form className="form">
                 <h1>Sign in</h1>
                 <div className="social-container">
-                  <a href="#" className="a social"><FontAwesomeIcon icon={faFacebook} /></a>
-                  <a href="#" className="a social"><FontAwesomeIcon icon={faGooglePlus} /></a>
-                  <a href="#" className="a social"><FontAwesomeIcon icon={faLinkedin} /></a>
+                  <span className="a social"><FontAwesomeIcon icon={faFacebook} /></span>
+                  <span className="a social"><FontAwesomeIcon icon={faGooglePlus} /></span>
+                  <span className="a social"><FontAwesomeIcon icon={faLinkedin} /></span>
                 </div>
                 <span>or use your account</span>
                 <input className="input" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
                 <input className="input" type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
-                <a href="#">Forgot your password?</a>
+                <span>Forgot your password?</span>
                 <button type="submit" onClick={signIn} className='button'>Sign in</button>
               </form>
             </div>
@@ -97,6 +98,7 @@ function Login() {
           </div>
         </div>
       </div>
+      <FileUpload />
     </section >
   )
 }

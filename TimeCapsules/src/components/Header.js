@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useSateValue } from '../StateProvider'
-import { db, auth } from '../firebase'
+import { auth } from '../firebase'
 import capsuleLogo from '../resources/Capsula_Logo.png'
 import '../static/Header.css'
 
@@ -20,17 +20,18 @@ function Header() {
         <div class="contenedor">
           <nav class="menu">
             <Link to="/">
-              <a class="menu-link">Acerca De</a>
+              <span class="menu-link">Acerca De</span>
             </Link>
             <Link to={user ? "/" : "/login"}>
-              <a onClick={handleAuthentication} class="menu-link">{user ? "Cerrar Sesión" : "Login"}</a>
+              <span onClick={handleAuthentication} class="menu-link">{user ? "Cerrar Sesión" : "Login"}</span>
             </Link>
-            <a href="#" class="menu-link">Tutorial</a>
+            <span class="menu-link">Tutorial</span>
             <Link to="/CrearCapsula">
-              <a class="menu-link">Crear Cápsula</a>
+              <span class="menu-link">Crear Cápsula</span>
             </Link>
-            <a href="#" class="menu-link">Red Social</a>
-            <Link to="/"><a class="menu-link">Contacto</a></Link>
+            <span class="menu-link">Red Social</span>
+            <Link to="/">
+              <span class="menu-link">Contacto</span></Link>
           </nav>
           <div class="contenedor-texto">
             <div class="texto">

@@ -35,7 +35,7 @@ header .menu {
   text-align: center;
 }
 
-header .menu a {
+header .menu span {
   margin: 0 20px;
   color: #707070;
   font-weight: bold;
@@ -46,7 +46,7 @@ header .menu a {
   font-size: 1em;
 }
 
-header .menu a:hover {
+header .menu span:hover {
   border-bottom: 2px solid #707070;
 }
 
