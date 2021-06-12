@@ -1,41 +1,41 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Open Sans", Sans-serif;
+  font-family: 'Open Sans', Sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  
 }
-.contenedor{
+
+.contenedor {
   width: 90%;
   max-width: 1000px;
-  margin:auto;
+  margin: auto;
   overflow: hidden;
 }
 
-header{
-  background: url('../resources/fondo.jpg') #FBCBCA;
+header {
+  background: url('../resources/fondo.jpg') #fbcbca;
   background-repeat: no-repeat;
   background-position: center;
   max-height: 600px;
 }
 
-header .menu-link:hover{
+header .menu-link:hover {
   border-radius: 6px;
-  background-color: rgb(247, 162, 162);;
+  background-color: rgb(247, 162, 162);
   color: white;
 }
 
-header .menu{
+header .menu {
   margin: 40px 0;
   text-align: center;
 }
 
-header .menu a{
-  margin:0 20px;
-  color:#707070;
+header .menu a {
+  margin: 0 20px;
+  color: #707070;
   font-weight: bold;
   padding-bottom: 9px;
   display: inline-block;
@@ -44,27 +44,45 @@ header .menu a{
   font-size: 1em;
 }
 
-header .menu a:hover{
+header .menu a:hover {
   border-bottom: 2px solid #707070;
 }
 
-header .contenedor-texto{
+header .contenedor-texto {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin:120px 0;
+  margin: 120px 0;
 }
 
-header .contenedor-texto .texto{
+header .contenedor-texto .texto {
   display: inline-block;
   text-align: center;
 }
 
-header .contenedor-texto .texto h1{
+header .contenedor-texto .texto h1 {
   color: #707070;
-  font-family: "Satisfy";
+  font-family: 'Satisfy';
   font-weight: bold;
-  margin:0;
+  margin: 0;
   font-size: 80px;
   line-height: 80px;
+}
+
+.main .contenedor {
+  overflow: visible;
+}
+
+.main .acerca-de {
+  text-align: center;
+}
+
+.main .acerca-de .foto {
+  margin-top: -78px;
+}
+
+.main .acerca-de .foto img {
+  vertical-align: top;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.4);
 }

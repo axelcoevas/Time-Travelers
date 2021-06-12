@@ -1,185 +1,213 @@
-body{
-  background: #fff;
-  font-family: "Open Sans", Sans-serif;
-  font-size: 16px;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+.a {
+  color: #333;
+  font-size: 35px;
+  text-decoration: none;
+  margin: 15px 0;
 }
 
-/*   ---------    LOGO   ------  */
-.main .contenedor{
-  overflow: visible;
-}
-.main .acerca-de {
-  text-align: center;
-}
-.main .acerca-de .foto{
-  margin-top: -78px;
-}
-
-.main .acerca-de .foto img{
-  vertical-align: top;
-  border-radius: 50%;
-  border: 5px solid rgba(255,255,255,0.4);
-}
-
-main{
-  width: 100%;
-  padding: 20px;
+.contenedor-login {
+  width: 90%;
   margin: auto;
-  margin-top: 100px;
-}
-
-.contenedor__todo{
-  width: 100%;
-  max-width: 800px;
-  margin: auto;
-  position: relative;
-  margin-top: 120px;
-}
-
-.caja__trasera{
-  width: 100%;
-  padding: 10px 20px;
+  max-width: 1000px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  background-color: #CE687C;
+  align-content: center;
 }
 
-.caja__trasera div{
-  margin: 100px 40px;
-  color: white;
-  transition: all 500ms;
+.button {
+  border-radius: 20px;
+  border: 1px solid #ce687c;
+  background-color: #ce687c;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
 }
 
-
-.caja__trasera div p,
-.caja__trasera button{
-  margin-top: 30px;
+.button:active {
+  transform: scale(0.95);
 }
 
-.caja__trasera div h3{
-  font-weight: 400;
-  font-size: 26px;
-}
-
-.caja__trasera div p{
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.caja__trasera button{
-  padding: 10px 40px;
-  border: 4px solid #fff;
-  font-size: 14px;
-  background: transparent;
-  font-weight: 600;
-  cursor: pointer;
-  color: white;
+.button:focus {
   outline: none;
-  transition: all 300ms;
-  border-radius: 7px;
 }
 
-.caja__trasera button:hover{
-  background: #fff;
-  color: #C25D72;
+.button.ghost {
+  background-color: transparent;
+  border-color: #ffffff;
 }
 
-/*Formularios*/
-
-.contenedor__login-register{
+.form {
+  background-color: #ffffff;
   display: flex;
   align-items: center;
-  width: 100%;
-  max-width: 380px;
-  position: relative;
-  top: -185px;
-  left: 10px;
-
-  /*La transicion va despues del codigo JS*/
-  transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-}
-
-.contenedor__login-register form{
-  width: 100%;
-  padding: 80px 20px;
-  background: #FCF5F6;
-  position: absolute;
-  border-radius: 20px;
-}
-
-.contenedor__login-register form h2{
-  font-size: 30px;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
   text-align: center;
-  margin-bottom: 20px;
-  color: #C25D72;
 }
 
-.contenedor__login-register form input{
+.input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
   width: 100%;
+}
+
+.body {
+  background: #f6f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  height: 50vh;
+  margin: -20px 0 50px;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
   margin-top: 20px;
-  padding: 10px;
-  border: none;
-  background: white;
-  font-size: 16px;
-  outline: none;
 }
 
-.contenedor__login-register form button{
-  padding: 10px 40px;
-  margin-top: 40px;
-  border: none;
-  font-size: 14px;
-  background: #C25D72;
-  font-weight: 600;
-  cursor: pointer;
-  color: white;
-  outline: none;
-  border-radius: 7px;
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
 }
 
+.sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
 
+.container.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+}
 
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
 
-.formulario__login{
+.container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
   opacity: 1;
-  display: block;
-}
-.formulario__register{
-  display: none;
+  z-index: 5;
+  animation: show 0.6s;
 }
 
-
-
-@media screen and (max-width: 850px){
-
-  main{
-      margin-top: 50px;
+@keyframes show {
+  0%,
+  49.99% {
+    opacity: 0;
+    z-index: 1;
   }
 
-  .caja__trasera{
-      max-width: 350px;
-      height: 300px;
-      flex-direction: column;
-      margin: auto;
+  50%,
+  100% {
+    opacity: 1;
+    z-index: 5;
   }
+}
 
-  .caja__trasera div{
-      margin: 0px;
-      position: absolute;
-  }
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
 
+.container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
 
-  /*Formularios*/
+.overlay {
+  background: #ce687c;
+  background: -webkit-linear-gradient(to right, #ce687c, #ff416c);
+  background: linear-gradient(to right, #ce687c, #ff416c);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #ffffff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
 
-  .contenedor__login-register{
-      top: -10px;
-      left: -5px;
-      margin: auto;
-  }
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
 
-  .contenedor__login-register form{
-      position: relative;
-  }
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+  transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
+
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}
+
+.social-container {
+  margin: 20px 0;
+}
+
+.social-container a {
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
 }
