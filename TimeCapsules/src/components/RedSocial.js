@@ -1,7 +1,7 @@
 import React from 'react';
 import '../static/RedSocial.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faSearch, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import amazon from '../resources/amazon.png'
 import mercadolibre from '../resources/mercado.png'
 import claro from '../resources/claro.png'
@@ -26,11 +26,22 @@ function RedSocial() {
       <div className="cont-all-red">
         <div className="usuario-red">
           <div className="datos-usuario">
-            <div className="head"></div>
-            <p><FontAwesomeIcon icon={faUser} />Usuario :</p>
-            <p>........</p>
-          </div>
-          <div className="datos-usuario">
+          <div class="head-red"></div>
+                <section class="user-red">
+                    <section class="acerca-de-red">
+                        <div class="contenedor-red">
+                            <div class="foto-red">
+                                <img src={perfil} width="150" height="150" alt="Time Travelers"/>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <div class="user-data">
+                    <p><FontAwesomeIcon icon={faUser} />  Usuario :</p>
+                    <input type="text" placeholder="Usuario" disabled />
+                    <p><FontAwesomeIcon icon={faEnvelope} /> Correo :</p>
+                    <input type="text" placeholder="Correo" disabled />
+                </div>
           </div>
         </div>
         <div className="publicaciones-red">

@@ -34,19 +34,27 @@
     border-radius: 20px;
     background-color: #FFE6E9   ;
     margin: auto;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-bottom: 50px;
     font-size: 35px;
-    font-family: 'Satisfy';
+    font-family: "Satisfy";
     font-weight: bold;
     color:#CE687C ;
-   text-align: center;
+    text-align: center;
     padding-top: 150px;
     width: 300px;
-    height: 500px;
-
+    height: 800px;
 }
-.usuario-red .datos-usuario .head{
+
+.usuario-red .datos-usuario .user-data{
+    margin: auto;
+    background-color: #fffffff3;
+    margin-top: 60px;
+    width: 280px;
+    border-radius: 5px;
+}
+
+.usuario-red .datos-usuario .head-red{
     border-radius: 5px;
     background-color: #CE687C   ;
     margin: auto;
@@ -56,6 +64,22 @@
     width: 300px;
     height: 130px;
 
+}
+
+.usuario-red .datos-usuario input{
+    width:80%;
+    margin: auto;
+    border: none;
+}
+
+.user-red .contenedor-red{
+    overflow: visible;
+}
+
+.user-red .acerca-de-red .foto-red img{
+    vertical-align: top;
+    border-radius: 50%;
+    border: 5px dashed #CE687C;
 }
 
 .publicaciones-red .wish{
