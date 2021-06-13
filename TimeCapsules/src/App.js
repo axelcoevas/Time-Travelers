@@ -9,6 +9,7 @@ import { useSateValue } from './StateProvider'
 import CrearCapsula from './components/CrearCapsula';
 import RedSocialPerfil from './components/RedSocialPerfil';
 import RedSocialWishList from './components/RedSocialWishList';
+import RedSocial from './components/RedSocial';
 
 function App() {
   // eslint-disable-next-line
@@ -38,6 +39,9 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
+        <Route path="/RedSocial">
+          <RedSocial />
+        </Route>
         <Route path="/RedSocialWishList">
             <RedSocialWishList />
           </Route>

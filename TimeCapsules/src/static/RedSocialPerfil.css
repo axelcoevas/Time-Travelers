@@ -6,7 +6,7 @@
     width: 1300px;
 }
 
-.usuario{
+.usuario-perfil{
     margin: auto;
     margin-left: 30px;
     margin-top: 70px;
@@ -16,7 +16,7 @@
     border-radius: 20px;
 }
 
-.usuario .img-usuario{
+.usuario-perfil .img-usuario{
     border-radius: 100%;
     border: 5px solid #dddbdb;
     margin: auto;
@@ -29,7 +29,14 @@
     height:250px;
 
 }
-.usuario .datos-usuario{
+.usuario-perfil .img-usuario img{
+    border-radius: 50%;
+    position: absolute;
+    top: 605px;
+    left: 137px;
+
+}
+.usuario-perfil .datos-usuario{
     border-radius: 20px;
     background-color: white;
     margin: auto;
@@ -42,7 +49,7 @@
 
 }
 
-.publicaciones{
+.publicaciones-perfil{
     background-color: #FFE6E9;
     border-radius: 20px;
     margin: auto;
@@ -51,7 +58,7 @@
     width: 820px;
     height: 800px;
 }
-.publicaciones .title-wish{
+.publicaciones-perfil .title-wish{
     margin: auto;
     padding-top: 30px;;
     color:#707070;
@@ -61,7 +68,7 @@
     font-size: 40px;
     width: 500px;
 }
-.publicaciones .wish{
+.publicaciones-perfil .wish{
     margin: auto;
     margin-top: 50px;
     background-color: white;
@@ -72,19 +79,19 @@
 
 }
 
-.publicaciones .galeria{
+.publicaciones-perfil .galeria{
     margin: 10px 20px;
     box-shadow: 0 2px 5px 0 #CE687C, 0 6px 20px rgb(0,0,0,0.19) ;
     float: left;
     width: 100px;
     
 }
-.publicaciones .galeria img{
+.publicaciones-perfil .galeria img{
    margin: auto;
    width: 100%;
    height: auto;
 }
-.publicaciones .galeria:hover{
+.publicaciones-perfil .galeria:hover{
    border: 1px solid #C25D72;
    transform: rotate(-5deg);
 }

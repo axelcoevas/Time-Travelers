@@ -10,9 +10,9 @@ function RedSocialPerfil() {
   return (
     <div className="Perfil">
         <div className="cont-all">
-        <div className="usuario">
+        <div className="usuario-perfil">
             <div className="img-usuario">
-                <img src={perfil}></img>
+                <img src={perfil} alt="Usuario" width="230" height="230"/>
             </div>
             <div className="datos-usuario">
                 <p>Nombre: </p>
@@ -25,7 +25,7 @@ function RedSocialPerfil() {
                 <label>16 - Julio - 1999</label>
             </div>
         </div>
-        <div className="publicaciones">
+        <div className="publicaciones-perfil">
             <div className="title-wish">
                 <p>Mi WishList</p>
             </div>

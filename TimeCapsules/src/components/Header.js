@@ -25,7 +25,7 @@ function Header() {
             <Link to={user ? "/" : "/login"}>
               <span onClick={handleAuthentication} className="menu-link">{user ? "Cerrar Sesión" : "Login"}</span>
             </Link>
-            <Link to="/RedSocialWishList">
+            <Link to="/RedSocial">
               <span className="menu-link">Tutorial</span>
             </Link>
             
