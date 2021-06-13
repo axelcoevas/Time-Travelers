@@ -27,16 +27,16 @@ function RedSocial() {
         <div className="usuario-red">
           <div className="datos-usuario">
           <div class="head-red"></div>
-                <section class="user-red">
-                    <section class="acerca-de-red">
-                        <div class="contenedor-red">
-                            <div class="foto-red">
+                <section className="user-red">
+                    <section className="acerca-de-red">
+                        <div className="contenedor-red">
+                            <div className="foto-red">
                                 <img src={perfil} width="150" height="150" alt="Time Travelers"/>
                             </div>
                         </div>
                     </section>
                 </section>
-                <div class="user-data">
+                <div className="user-data">
                     <p><FontAwesomeIcon icon={faUser} />  Usuario :</p>
                     <input type="text" placeholder="Usuario" disabled />
                     <p><FontAwesomeIcon icon={faEnvelope} /> Correo :</p>
