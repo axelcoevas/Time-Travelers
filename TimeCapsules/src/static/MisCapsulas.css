@@ -5,7 +5,7 @@
     padding-bottom: 80px;
 
 }
-.cont-all-misCapsulas .tit{
+.cont-all-misCapsulas .tit-misCapsulas{
     margin: auto;
     background-color: #CE687C;
     width: 90%;
@@ -16,7 +16,6 @@
     text-align: center;
     color: #fff;
 }
-
 
 
 .container-misCapsulas{
@@ -32,7 +31,7 @@
   }
   
   
-  .item{
+  .item-misCapsulas{
     background-color: #fff;
     cursor: pointer;
     box-shadow: 0 0 5px 0 rgba(0,0,0,.095);
@@ -43,7 +42,7 @@
   }
   
   
-  .item::after {
+  .item-misCapsulas::after {
     content: "";
     background-color: rgba(179, 229, 252, .1);
     width: 100%;
@@ -56,12 +55,12 @@
     opacity: 0;
   }
   
-  .item:hover:after{
+  .item-misCapsulas:hover:after{
     opacity: 1;
     transform: scale(1);
   }
   
-  .item:hover {
+  .item-misCapsulas:hover {
     transform: scale(1.05);
   }
   
@@ -79,7 +78,7 @@
  
   
 
-.cont-all .cont-misCapsulas{
+.cont-all-misCapsulas .cont-misCapsulas{
     background-color: rgb(247, 244, 244);
     margin: auto;
     margin-top: 80px;
@@ -88,7 +87,7 @@
     height: 500px;
     width: 90%;
 }
-.cont-all-misCapsulas .cont button{
+.cont-all-misCapsulas .cont-misCapsulas button{
     margin: auto;
     padding: 10px 40px;
     border: none;
@@ -103,7 +102,7 @@
     border-radius: 7px;
 
 }
-.cont-all-misCapsulas .cont .button{
+.cont-all-misCapsulas .cont-misCapsulas .button-misCapsulas{
     text-align: center;
     margin: auto;
     width: auto;
@@ -112,7 +111,11 @@
 
 }
 
-.cont-all-misCapsulas .cont button:hover{
+.cont-all-misCapsulas .cont-misCapsulas button:hover{
     background: #fdb4bf;
     color: white;
+}
+
+.etiquetaA{
+    text-decoration: none;
 }

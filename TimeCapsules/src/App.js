@@ -10,6 +10,7 @@ import CrearCapsula from './components/CrearCapsula';
 import RedSocialPerfil from './components/RedSocialPerfil';
 import RedSocialWishList from './components/RedSocialWishList';
 import RedSocial from './components/RedSocial';
+import MisCapsulas from './components/MisCapsulas';
 
 function App() {
   // eslint-disable-next-line
@@ -39,7 +40,9 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-        
+        <Route path="/MisCapsulas">
+          <MisCapsulas />
+        </Route>
         <Route path="/RedSocial">
           <RedSocial />
         </Route>
