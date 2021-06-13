@@ -28,14 +28,12 @@ function Header() {
             <Link to="/RedSocialPerfil">
               <span className="menu-link">Tutorial</span>
             </Link>
-            
             <Link to="/MisCapsulas">
               <span className="menu-link">Crear Cápsula</span>
             </Link>
             <Link to="/RedSocial">
               <span className="menu-link">Red Social</span>
             </Link>
-            
             <Link to="/">
               <span className="menu-link">Contacto</span></Link>
           </nav>
