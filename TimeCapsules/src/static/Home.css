@@ -5,11 +5,11 @@
   overflow: hidden;
 }
 
-.main .contenedor-home {
+.main-home .contenedor-home {
   overflow: visible;
 }
 
-.main .acerca-de .texto {
+.main-home .acerca-de-home .texto {
   color: #5a5a5a;
   font-weight: 600;
   font-size: 1em;
@@ -18,7 +18,7 @@
   margin: 40px auto 60px auto;
 }
 
-.main .acerca-de .texto .titulo {
+.main-home .acerca-de-home .texto .titulo {
   font-size: 34px;
   line-height: 34px;
   margin-bottom: 40px;
@@ -27,16 +27,16 @@
   text-align: center;
 }
 
-.main .acerca-de .texto .bold {
+.main-home .acerca-de-home .texto .bold {
   color: #ce687c;
   text-decoration: underline;
 }
 
-.main .publicaciones {
+.main-home .publicaciones-home {
   padding: 60px 0;
 }
 
-.main .publicaciones .publis-izquierda {
+.main-home .publicaciones-home .publis-izquierda {
   background: #ffe6e9;
   height: 500px;
   display: flex;
@@ -44,40 +44,40 @@
   justify-content: center;
 }
 
-.main .publicaciones .publis-derecha {
+.main-home .publicaciones-home .publis-derecha {
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.main .publicaciones .contenedor-home {
+.main-home .publicaciones-home .contenedor-home {
   overflow: hidden;
 }
 
-.publicaciones .publis-izquierda .imagen-publis {
+.publicaciones-home .publis-izquierda .imagen-publis {
   text-align: center;
   width: 50%;
   float: left;
 }
 
-.publicaciones .imagen-publis img {
+.publicaciones-home .imagen-publis img {
   border-radius: 20px;
 }
 
-.publicaciones .publis-izquierda .contenedor-texto {
+.publicaciones-home .publis-izquierda .contenedor-texto {
   text-align: center;
   width: 50%;
   float: right;
 }
 
-.publicaciones .contenedor-texto .description {
+.publicaciones-home .contenedor-texto .description {
   font-size: 18px;
   font-weight: 300;
   font-style: italic;
 }
 
-.publicaciones .contenedor-texto .titulo-publis {
+.publicaciones-home .contenedor-texto .titulo-publis {
   font-size: 25px;
   margin-bottom: 40px;
   font-weight: bold;
@@ -85,13 +85,13 @@
   text-align: center;
 }
 
-.publicaciones .publis-derecha .imagen-publis {
+.publicaciones-home .publis-derecha .imagen-publis {
   text-align: center;
   width: 50%;
   float: right;
 }
 
-.publicaciones .publis-derecha .contenedor-texto {
+.publicaciones-home .publis-derecha .contenedor-texto {
   text-align: center;
   width: 50%;
   float: left;

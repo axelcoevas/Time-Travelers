@@ -7,9 +7,9 @@ import '../static/Home.css'
 function Home() {
   return (
     <div className="home">
-      <section className="main">
-        <section className="acerca-de">
-          <div className="contenedor">
+      <section className="main-home">
+        <section className="acerca-de-home">
+          <div className="contenedor-home">
             <div className="texto">
               <h3 className="titulo">Acerca de</h3>
               <p><span className="bold">Time-Travelers</span> es un proyecto escolar,creado por estudiantes del Instituto Politécnico Nacional de la <span className="bold">Escuela Superior de Cómputo</span>, se desea implementar una interacción mixta
@@ -18,7 +18,7 @@ function Home() {
             </div>
           </div>
         </section>
-        <section className="publicaciones">
+        <section className="publicaciones-home">
           <div className="publis-izquierda">
             <div className="contenedor-home">
               <div className="imagen-publis">
