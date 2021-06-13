@@ -15,10 +15,6 @@ function App() {
   // eslint-disable-next-line
   const [{ }, dispatch] = useSateValue();
 
-  const handlePath = (path) => {
-    return !auth ? "/Login" : path;
-  }
-
   useEffect(() => {
     auth.onAuthStateChanged(authUser => {
       console.log('THE USER IS >>>', authUser)
@@ -43,17 +39,16 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-
-          <Route path={handlePath("/RedSocial")}>
+          <Route path="/RedSocial">
             <RedSocial />
           </Route>
-          <Route path={handlePath("/RedSocialWishList")}>
+          <Route path="/RedSocialWishList">
             <RedSocialWishList />
           </Route>
-          <Route path={handlePath("/RedSoscialPerfil")}>
+          <Route path="/RedSocialPerfil">
             <RedSocialPerfil />
           </Route>
-          <Route path={handlePath("/CrearCapsula")}>
+          <Route path="/CrearCapsula">
             <CrearCapsula />
           </Route>
           <Route path="/Login">
