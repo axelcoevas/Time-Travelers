@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { auth } from './firebase'
 import { useSateValue } from './StateProvider'
 import CrearCapsula from './components/CrearCapsula';
+import RedSocialPerfil from './components/RedSocialPerfil';
+import RedSocialWishList from './components/RedSocialWishList';
 
 function App() {
   // eslint-disable-next-line
@@ -36,6 +38,12 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
+        <Route path="/RedSocialWishList">
+            <RedSocialWishList />
+          </Route>
+          <Route path="/RedSocialPerfil">
+            <RedSocialPerfil />
+          </Route>
           <Route path="/CrearCapsula">
             <CrearCapsula />
           </Route>
