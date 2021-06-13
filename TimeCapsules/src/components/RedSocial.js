@@ -15,137 +15,137 @@ import adidas from '../resources/adidas.jpg'
 
 function RedSocial() {
   return (
-        <div className="RedSocial">
-            <div className="search">
+    <div className="RedSocial">
+      <div className="search">
         <form action="miAccion">
-            <input type="search" />
-            <button type="submit"><FontAwesomeIcon icon={faSearch} /></button>
+          <input type="search" />
+          <button type="submit"><FontAwesomeIcon icon={faSearch} /></button>
         </form>
 
-    </div>
-    <div className="cont-all-red">
+      </div>
+      <div className="cont-all-red">
         <div className="usuario-red">
-            <div className="datos-usuario">
-                <div className="head"></div>
-                <p><FontAwesomeIcon icon={faUser} />Usuario :</p>
-                <p>........</p>
-            </div>
-            <div className="datos-usuario">
-            </div>
+          <div className="datos-usuario">
+            <div className="head"></div>
+            <p><FontAwesomeIcon icon={faUser} />Usuario :</p>
+            <p>........</p>
+          </div>
+          <div className="datos-usuario">
+          </div>
         </div>
         <div className="publicaciones-red">
-            <div className="publi">
-                <h2>Publicaciones</h2>
+          <div className="publi">
+            <h2>Publicaciones</h2>
+          </div>
+          <div className="wish">
+            <div className="wish1">
+              <div className="foto">
+                <img src={perfil} alt="User" width="112px" height="112px" />
+              </div>
+              <div className="user-red">
+                <p>GabrielA</p>
+              </div>
             </div>
-            <div className="wish">
-                <div className="wish1">
-                    <div className="foto">
-                        <img src={perfil} alt="User" width="112px" height="112px"/>
-                    </div>
-                    <div className="user-red">
-                        <p>GabrielA</p>
-                    </div>
+            <div className="wishList">
+              <div className="tit-wish">
+                <p>WishList</p>
+              </div>
+              <div className="galeria">
+                <div className="foto">
+                  <img src={amazon} alt="Amazon"></img>
                 </div>
-                <div className="wishList">
-                    <div className="tit-wish">
-                        <p>WishList</p>
-                    </div>
-                    <div className="galeria">
-                        <div className="foto">
-                            <img src={amazon}></img>
-                        </div>
-                    </div>
-                    <div className="galeria">
-                        <div className="foto">
-                            <img src={mercadolibre}></img>
-                        </div>
-                    </div>
-                    <div className="galeria">
-                        <div className="foto">
-                            <img src={claro}></img>
-                        </div>
-                    </div>
-                    <div className="galeria">
-                        <div className="foto">
-                            <img src={nike}></img>
-                        </div>
-                    </div>
+              </div>
+              <div className="galeria">
+                <div className="foto">
+                  <img src={mercadolibre} alt="Mercado Libre"></img>
                 </div>
+              </div>
+              <div className="galeria">
+                <div className="foto">
+                  <img src={claro} alt="Claro Video"></img>
+                </div>
+              </div>
+              <div className="galeria">
+                <div className="foto">
+                  <img src={nike} alt="Nike"></img>
+                </div>
+              </div>
             </div>
-            <div className="wish">
-                <div className="wish2">
-                    <div className="foto">
-                        <img src={perfil} alt="User" width="112px" height="112px"/>
-                    </div>
-                    <div className="user-red">
-                        <p>IsmaelO</p>
-                    </div>
-                </div>
-                <div className="wishList2">
-                    <div className="tit-wish">
-                        <p>WishList</p>
-                    </div>
-                    <div className="galeria">
-                        <div className="foto">
-                            <img src={samsung}></img>
-                        </div>
-                    </div>
-                    <div className="galeria">
-                        <div className="foto">
-                            <img src={huawei}></img>
-                        </div>
-                    </div>
-                    <div className="galeria">
-                        <div className="foto">
-                            <img src={amazon}></img>
-                        </div>
-                    </div>
-                    <div className="galeria">
-                        <div className="foto">
-                            <img src={nike}></img>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div className="wish">
+            <div className="wish2">
+              <div className="foto">
+                <img src={perfil} alt="User" width="112px" height="112px" />
+              </div>
+              <div className="user-red">
+                <p>IsmaelO</p>
+              </div>
             </div>
-            <div className="wish">
-                <div className="wish3">
-                    <div className="foto">
-                        <img src={perfil} alt="User" width="112px" height="112px"/>
-                    </div>
-                    <div className="user-red">
-                        <p>AxelC</p>
-                    </div>
+            <div className="wishList2">
+              <div className="tit-wish">
+                <p>WishList</p>
+              </div>
+              <div className="galeria">
+                <div className="foto">
+                  <img src={samsung} alt="Samsung"></img>
                 </div>
-                <div className="wishList3">
-                    <div className="tit-wish">
-                        <p>WishList</p>
-                    </div>
-                    <div className="galeria">
-                        <div className="foto">
-                            <img src={sony}></img>
-                        </div>
-                    </div>
-                    <div className="galeria">
-                        <div className="foto">
-                            <img src={adidas}></img>
-                        </div>
-                    </div>
-                    <div className="galeria">
-                        <div className="foto">
-                            <img src={claro}></img>
-                        </div>
-                    </div>
-                    <div className="galeria">
-                        <div className="foto">
-                            <img src={apple}></img>
-                        </div>
-                    </div>
+              </div>
+              <div className="galeria">
+                <div className="foto">
+                  <img src={huawei} alt="Huawei"></img>
                 </div>
+              </div>
+              <div className="galeria">
+                <div className="foto">
+                  <img src={amazon} alt="Amazon"></img>
+                </div>
+              </div>
+              <div className="galeria">
+                <div className="foto">
+                  <img src={nike} alt="Nike"></img>
+                </div>
+              </div>
             </div>
+          </div>
+          <div className="wish">
+            <div className="wish3">
+              <div className="foto">
+                <img src={perfil} alt="User" width="112px" height="112px" />
+              </div>
+              <div className="user-red">
+                <p>AxelC</p>
+              </div>
+            </div>
+            <div className="wishList3">
+              <div className="tit-wish">
+                <p>WishList</p>
+              </div>
+              <div className="galeria">
+                <div className="foto">
+                  <img src={sony} alt="Sony"></img>
+                </div>
+              </div>
+              <div className="galeria">
+                <div className="foto">
+                  <img src={adidas} alt="Adidas"></img>
+                </div>
+              </div>
+              <div className="galeria">
+                <div className="foto">
+                  <img src={claro} alt="Claro Video"></img>
+                </div>
+              </div>
+              <div className="galeria">
+                <div className="foto">
+                  <img src={apple} alt="Nike"></img>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-        </div>
-    );
+  );
 }
 
 export default RedSocial;
