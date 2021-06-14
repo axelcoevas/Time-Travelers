@@ -12,6 +12,9 @@
   width: 300px;
 }
 
+.upload-container .inputs-container progress{
+  width: 315px;
+}
 
 .upload-container .inputs-container input[type="file"]{
   position: relative;
@@ -34,6 +37,7 @@
   bottom: 0;
   width: 100%;
 }
+
 
 .upload-container .inputs-container input[type="file"]::before{
   content: 'Subir Imagen de Perfil';
