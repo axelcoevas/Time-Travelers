@@ -54,7 +54,7 @@ function Login() {
         <div className={`container ${left ? "right-panel-active" : ""}`} id="container">
           <div className="body">
             <div className="form-container sign-up-container">
-              <form id="signup-form" class="form">
+              <form id="signup-form" className="form">
                 <h1>Crear Cuenta</h1>
                 <div className="social-container">
                   <span className="a social icon"><FontAwesomeIcon icon={faFacebook} /></span>

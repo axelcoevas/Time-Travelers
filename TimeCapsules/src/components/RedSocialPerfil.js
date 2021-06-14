@@ -4,18 +4,21 @@ import amazon from '../resources/amazon.png'
 import mercadolibre from '../resources/mercado.png'
 import claro from '../resources/claro.png'
 import nike from '../resources/nike.jpg'
-import perfil from '../resources/perfil.jpg'
+import defaultProfilePicture from '../resources/perfil.jpg'
 import { useSateValue } from '../StateProvider';
 
 function RedSocialPerfil() {
   const [{ user, userData }] = useSateValue();
+
+  const profilePicture = defaultProfilePicture;
 
   return (
     <div className="Perfil">
       <div className="cont-all">
         <div className="usuario-perfil">
           <div className="img-usuario">
-            <img src={perfil} alt="Usuario" width="230" height="230" />
+            <img src={profilePicture} alt="Usuario" width="230" height="230" />
+
           </div>
           <div className="datos-usuario">
             <p>Nombre: </p>
