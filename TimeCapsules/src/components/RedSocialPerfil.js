@@ -6,23 +6,21 @@ import claro from '../resources/claro.png'
 import nike from '../resources/nike.jpg'
 import defaultProfilePicture from '../resources/perfil.jpg'
 import { useSateValue } from '../StateProvider';
+import ProfileUpload from './ProfileUpload';
 
 function RedSocialPerfil() {
   const [{ user, userData }] = useSateValue();
 
-  console.log(user)
-
-  const profilePicture = defaultProfilePicture
-
-
+  console.log(userData)
 
   return (
     <div className="Perfil">
       <div className="cont-all">
         <div className="usuario-perfil">
           <div className="profile-picture">
-            <img src={profilePicture} alt="Time Travelers" />
+            <img src={userData?.profileURL ? userData?.profileURL : defaultProfilePicture} alt="Time Travelers" />
           </div>
+          <ProfileUpload />
           <div className="datos-usuario">
             <p>Nombre: </p>
             <label>{userData?.name}</label>

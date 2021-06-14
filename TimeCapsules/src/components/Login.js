@@ -38,7 +38,8 @@ function Login() {
         })
         return db.collection('users').doc(auth.user.uid).set({
           name: name,
-          birth: birth
+          birth: birth,
+          profileURL: null
         })
       })
       .catch(error => alert(error.message))
