@@ -6,7 +6,7 @@ import amazon from '../resources/amazon.png'
 import mercadolibre from '../resources/mercado.png'
 import claro from '../resources/claro.png'
 import nike from '../resources/nike.jpg'
-import perfil from '../resources/perfil.jpg'
+import defaultProfilePicture from '../resources/perfil.jpg'
 import apple from '../resources/apple.jpg'
 import samsung from '../resources/samsung.jpg'
 import huawei from '../resources/huaawei.png'
@@ -15,7 +15,7 @@ import adidas from '../resources/adidas.jpg'
 import { useSateValue } from '../StateProvider';
 
 function RedSocial() {
-  const [{ user }] = useSateValue();
+  const [{ user, userData }] = useSateValue();
 
   return (
     <div className="RedSocial">
@@ -33,7 +33,7 @@ function RedSocial() {
               <section className="acerca-de-red">
                 <div className="contenedor-red">
                   <div className="foto-red">
-                    <img src={perfil} width="150" height="150" alt="Time Travelers" />
+                    <img src={userData?.profileURL ? userData?.profileURL : defaultProfilePicture} width="150" height="150" alt="Time Travelers" />
                   </div>
                 </div>
               </section>
@@ -53,7 +53,7 @@ function RedSocial() {
           <div className="wish">
             <div className="wish1">
               <div className="foto">
-                <img src={perfil} alt="User" width="112px" height="112px" />
+                <img src={defaultProfilePicture} alt="User" width="112px" height="112px" />
               </div>
               <div className="user-red">
                 <p>GabrielA</p>
@@ -88,7 +88,7 @@ function RedSocial() {
           <div className="wish">
             <div className="wish2">
               <div className="foto">
-                <img src={perfil} alt="User" width="112px" height="112px" />
+                <img src={defaultProfilePicture} alt="User" width="112px" height="112px" />
               </div>
               <div className="user-red">
                 <p>IsmaelO</p>
@@ -123,7 +123,7 @@ function RedSocial() {
           <div className="wish">
             <div className="wish3">
               <div className="foto">
-                <img src={perfil} alt="User" width="112px" height="112px" />
+                <img src={defaultProfilePicture} alt="User" width="112px" height="112px" />
               </div>
               <div className="user-red">
                 <p>AxelC</p>
