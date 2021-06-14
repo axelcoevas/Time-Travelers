@@ -1,0 +1,13 @@
+.upload-container {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  margin-top: 10px;
+}
+
+.inputs-container {
+  display: block;
+  width: 200px;
+}
