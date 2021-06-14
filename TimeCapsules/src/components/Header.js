@@ -1,16 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { useSateValue } from '../StateProvider'
 import { auth } from '../firebase'
 import capsuleLogo from '../resources/Capsula_Logo.png'
 import '../static/Header.css'
 
 function Header() {
+  const history = useHistory();
   const [{ user }] = useSateValue();
 
   const handleAuthentication = () => {
     if (user) {
       auth.signOut();
+      history.push("/Login");
     }
   }
 

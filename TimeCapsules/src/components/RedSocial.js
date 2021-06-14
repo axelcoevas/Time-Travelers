@@ -12,8 +12,11 @@ import samsung from '../resources/samsung.jpg'
 import huawei from '../resources/huaawei.png'
 import sony from '../resources/sony.webp'
 import adidas from '../resources/adidas.jpg'
+import { useSateValue } from '../StateProvider';
 
 function RedSocial() {
+  const [{ user }] = useSateValue();
+
   return (
     <div className="RedSocial">
       <div className="search">
@@ -26,22 +29,20 @@ function RedSocial() {
       <div className="cont-all-red">
         <div className="usuario-red">
           <div className="datos-usuario">
-          <div class="head-red"></div>
-                <section className="user-red">
-                    <section className="acerca-de-red">
-                        <div className="contenedor-red">
-                            <div className="foto-red">
-                                <img src={perfil} width="150" height="150" alt="Time Travelers"/>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-                <div className="user-data">
-                    <p><FontAwesomeIcon icon={faUser} />  Usuario :</p>
-                    <input type="text" placeholder="Usuario" disabled />
-                    <p><FontAwesomeIcon icon={faEnvelope} /> Correo :</p>
-                    <input type="text" placeholder="Correo" disabled />
+            <div className="head-red"></div>
+            <section className="user-red">
+              <section className="acerca-de-red">
+                <div className="contenedor-red">
+                  <div className="foto-red">
+                    <img src={perfil} width="150" height="150" alt="Time Travelers" />
+                  </div>
                 </div>
+              </section>
+            </section>
+            <div className="user-data">
+              <p><FontAwesomeIcon icon={faUser} /> {user?.displayName}</p>
+              <p><FontAwesomeIcon icon={faEnvelope} /> {user?.email}</p>
+            </div>
           </div>
         </div>
         <div className="publicaciones-red">

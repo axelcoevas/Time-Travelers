@@ -5,8 +5,11 @@ import mercadolibre from '../resources/mercado.png'
 import claro from '../resources/claro.png'
 import nike from '../resources/nike.jpg'
 import perfil from '../resources/perfil.jpg'
+import { useSateValue } from '../StateProvider';
 
 function RedSocialPerfil() {
+  const [{ user }] = useSateValue();
+
   return (
     <div className="Perfil">
       <div className="cont-all">
@@ -18,9 +21,9 @@ function RedSocialPerfil() {
             <p>Nombre: </p>
             <label>Gabriel</label>
             <p>Usuario: </p>
-            <label>Gabo001</label>
+            <label>{user?.displayName}</label>
             <p>Correo:</p>
-            <label>jarzatel1400@alumno.ipn.mx</label>
+            <label>{user?.email}</label>
             <p>Fecha de Nacimiento: </p>
             <label>16 - Julio - 1999</label>
           </div>
