@@ -9,5 +9,32 @@
 
 .inputs-container {
   display: block;
-  width: 200px;
+  width: 300px;
+}
+
+
+.upload-container .inputs-container input[type="file"]{
+  position: relative;
+  display: inline-block;
+}
+
+
+.upload-container .inputs-container input[type="file"]::before{
+  background-color: #FFC1D5;
+  color: black;
+  display: flex;            
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: 'Seleccionar'; /* testo por defecto */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.upload-container .inputs-container input[type="file"]::before{
+  content: 'Subir Imagen de Perfil';
 }
