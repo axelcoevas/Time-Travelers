@@ -29,7 +29,6 @@ function RedSocial() {
       <div className="cont-all-red">
         <div className="usuario-red">
           <div className="datos-usuario">
-            <div className="head-red"></div>
             <section className="user-red">
               <section className="acerca-de-red">
                 <div className="contenedor-red">

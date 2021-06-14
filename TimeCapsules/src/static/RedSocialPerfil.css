@@ -6,6 +6,22 @@
   width: 1300px;
 }
 
+.profile-picture {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  margin-top: 50px;
+}
+
+.profile-picture img {
+  display: block;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
 .usuario-perfil {
   margin: auto;
   margin-left: 30px;
@@ -16,24 +32,13 @@
   border-radius: 20px;
 }
 
-.usuario-perfil .img-usuario {
-  border-radius: 100%;
-  border: 5px solid #dddbdb;
-  margin: auto;
-  margin-top: 50px;
-  text-align: center;
-  font-size: 20px;
-  color: #dddbdb;
-  padding-top: 80px;
-  width: 250px;
-  height: 250px;
-}
 .usuario-perfil .img-usuario img {
   border-radius: 50%;
   position: absolute;
   top: 605px;
   left: 225px;
 }
+
 .usuario-perfil .datos-usuario {
   border-radius: 20px;
   background-color: white;
@@ -55,6 +60,7 @@
   width: 820px;
   height: 800px;
 }
+
 .publicaciones-perfil .title-wish {
   margin: auto;
   padding-top: 30px;
@@ -65,6 +71,7 @@
   font-size: 40px;
   width: 500px;
 }
+
 .publicaciones-perfil .wish {
   margin: auto;
   margin-top: 50px;
@@ -81,11 +88,13 @@
   float: left;
   width: 100px;
 }
+
 .publicaciones-perfil .galeria img {
   margin: auto;
   width: 100%;
   height: auto;
 }
+
 .publicaciones-perfil .galeria:hover {
   border: 1px solid #c25d72;
   transform: rotate(-5deg);

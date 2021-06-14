@@ -10,15 +10,18 @@ import { useSateValue } from '../StateProvider';
 function RedSocialPerfil() {
   const [{ user, userData }] = useSateValue();
 
-  const profilePicture = defaultProfilePicture;
+  console.log(user)
+
+  const profilePicture = defaultProfilePicture
+
+
 
   return (
     <div className="Perfil">
       <div className="cont-all">
         <div className="usuario-perfil">
-          <div className="img-usuario">
-            <img src={profilePicture} alt="Usuario" width="230" height="230" />
-
+          <div className="profile-picture">
+            <img src={profilePicture} alt="Time Travelers" />
           </div>
           <div className="datos-usuario">
             <p>Nombre: </p>

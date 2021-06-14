@@ -1,287 +1,285 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 .search {
-    margin: auto;
-    margin-top: 30px;
-    text-align: center;
-    width: 1290px;
-    height: 50px;
-    padding: 10px;
-    background-color: #CE687C;
-
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  width: 1290px;
+  height: 50px;
+  padding: 10px;
+  background-color: #ce687c;
 }
 
-.cont-all-red{
-    margin: auto;
-    margin-bottom: 30px;
-    padding-top: 10px;
-    padding-bottom: 80px;
-    height: auto;
+.cont-all-red {
+  margin: auto;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 80px;
+  height: auto;
 }
 
-.usuario-red{
-    margin: auto;
-    margin-left: 30px;
-    margin-top: 70px;
-    float: left;
-    width: 300px;
-    height: 600px;
-    border-radius: 20px;
+.usuario-red {
+  margin: auto;
+  margin-left: 30px;
+  margin-top: 70px;
+  float: left;
+  width: 300px;
+  height: 600px;
+  border-radius: 20px;
 }
 
-
-.usuario-red .datos-usuario{
-    border-radius: 20px;
-    background-color: #FFE6E9   ;
-    margin: auto;
-    margin-top: 5px;
-    margin-bottom: 50px;
-    font-size: 35px;
-    font-family: "Satisfy";
-    font-weight: bold;
-    color:#CE687C ;
-    text-align: center;
-    padding-top: 150px;
-    width: 300px;
-    height: 800px;
+.usuario-red .datos-usuario {
+  border-radius: 20px;
+  background-color: #ffe6e9;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  font-size: 35px;
+  font-family: 'Satisfy';
+  font-weight: bold;
+  color: #ce687c;
+  text-align: center;
+  padding-top: 150px;
+  width: 300px;
+  height: 800px;
 }
 
-.usuario-red .datos-usuario .user-data{
-    margin: auto;
-    background-color: #fffffff3;
-    margin-top: 60px;
-    width: 280px;
-    border-radius: 5px;
+.usuario-red .datos-usuario .user-data {
+  margin: auto;
+  background-color: #fffffff3;
+  margin-top: 60px;
+  width: 280px;
+  border-radius: 5px;
 }
 
-.usuario-red .datos-usuario .head-red{
-    border-radius: 5px;
-    background-color: #CE687C   ;
-    margin: auto;
-    position: absolute;
-    top: 620px;
-    left: 30px;
-    width: 300px;
-    height: 130px;
-
+.usuario-red .datos-usuario .head-red {
+  border-radius: 5px;
+  background-color: #ce687c;
+  margin: auto;
+  position: absolute;
+  top: 620px;
+  left: 30px;
+  width: 300px;
+  height: 130px;
 }
 
-.usuario-red .datos-usuario .user-data input{
-    width:80%;
-    margin: auto;
-    border: none;
+.usuario-red .datos-usuario .user-data input {
+  width: 80%;
+  margin: auto;
+  border: none;
 }
 
-.user-red .contenedor-red{
-    overflow: visible;
+.user-red .contenedor-red {
+  overflow: visible;
 }
 
-.user-red .acerca-de-red .foto-red img{
-    vertical-align: top;
-    border-radius: 50%;
-    border: 5px dashed #CE687C;
+.user-red .acerca-de-red .foto-red img {
+  vertical-align: top;
+  border-radius: 50%;
+  border: 5px dashed #ce687c;
 }
 
-.publicaciones-red .wish{
-    margin: auto;
-    margin-top: 50px;
-    background-color: white;
-    border: 4px solid #CE687C;
-    border-radius: 10px;
-    width: 900px;
-    height: 300px;
-
+.publicaciones-red .wish {
+  margin: auto;
+  margin-top: 50px;
+  background-color: white;
+  border: 4px solid #ce687c;
+  border-radius: 10px;
+  width: 900px;
+  height: 300px;
 }
-.publicaciones-red .wish .wish1{
-    margin: auto;
-    position: absolute;
-    top: 745px;
-    left: 385px;
-    float: left;
-    border: 4px solid #CE687C;
-    border-radius: 10px;
-    width: 250px;
-    height: 300px;  
+.publicaciones-red .wish .wish1 {
+  margin: auto;
+  position: absolute;
+  top: 745px;
+  left: 385px;
+  float: left;
+  border: 4px solid #ce687c;
+  border-radius: 10px;
+  width: 250px;
+  height: 300px;
 }
-.publicaciones-red .wish .wish1 .foto img, .publicaciones-red .wish .wish2 .foto img, .publicaciones-red .wish .wish3 .foto img{
-    border-radius: 50%;     
-    position: absolute;
-    top: 24px;
-    left: 65px;
-}
-
-.publicaciones-red .wish .wish1 .foto img{
-    border-radius: 50%;     
-    position: absolute;
-    top: 24px;
-    left: 65px;
-}
-.publicaciones-red .wish .wish1 .foto, .publicaciones-red .wish .wish2 .foto, .publicaciones-red .wish .wish3 .foto {
-    margin: auto;
-    margin-top: 20px;
-    border: 4px dashed #CE687C;
-    border-radius: 100%;
-    width: 120px;
-    height: 120px; 
-    padding: 25px;; 
-}
-.publicaciones-red .wish .wish1 .user-red, .publicaciones-red .wish .wish2 .user-red,.publicaciones-red .wish .wish3 .user-red {
-    margin: auto;
-    margin-top: 25px;
-    background-color: #CE687C;
-    border-radius: 8px;
-    width: 120px;
-    height: 60px; 
-    text-align: center;
-    padding: 5px;
-    color: white;
-    font-family: 'Satisfy';
-    font-weight: bold;
-    font-size: 20px;
+.publicaciones-red .wish .wish1 .foto img,
+.publicaciones-red .wish .wish2 .foto img,
+.publicaciones-red .wish .wish3 .foto img {
+  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+  left: 65px;
 }
 
-.publicaciones-red .wish .wish2{
-    margin: auto;
-    position: absolute;
-    top: 1095px;
-    left: 385px;
-    float: left;
-    border: 4px solid #CE687C;
-    border-radius: 10px;
-    width: 250px;
-    height: 300px;  
+.publicaciones-red .wish .wish1 .foto img {
+  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+  left: 65px;
 }
-.publicaciones-red .wish .wish3{
-    margin: auto;
-    position: absolute;
-    top: 1445px;
-    left: 385px;
-    float: left;
-    border: 4px solid #CE687C;
-    border-radius: 10px;
-    width: 250px;
-    height: 300px;  
+.publicaciones-red .wish .wish1 .foto,
+.publicaciones-red .wish .wish2 .foto,
+.publicaciones-red .wish .wish3 .foto {
+  margin: auto;
+  margin-top: 20px;
+  border: 4px dashed #ce687c;
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  padding: 25px;
 }
-.publicaciones-red .wish .wishList{
-    margin: auto;
-    position: absolute;
-    top: 770px;
-    left: 660px;
-    border: 4px solid #CE687C;
-    border-radius: 10px;
-    width: 600px;
-    height: 250px;  
-}
-.publicaciones-red .wish .wishList .tit-wish{
-    margin: auto;
-    margin-top: 0px;
-    text-align: center;
-    color: #fff;
-    font-family: 'Satisfy';
-    font-weight: bold;
-    font-size: 30px;
-    background-color:#CE687C ;
-    border-radius: 2px; 
-    
-}
-.publicaciones-red .wish .wishList2{
-    margin: auto;
-    position: absolute;
-    top: 1120px;
-    left: 660px;
-    border: 4px solid #CE687C;
-    border-radius: 10px;
-    width: 600px;
-    height: 250px;  
-}
-.publicaciones-red .wish .wishList2 .tit-wish{
-    margin: auto;
-    margin-top: 0px;
-    text-align: center;
-    color: #fff;
-    font-family: 'Satisfy';
-    font-weight: bold;
-    font-size: 30px;
-    background-color:#CE687C ;
-    border-radius: 2px; 
-    
-}
-.publicaciones-red .wish .wishList3{
-    margin: auto;
-    position: absolute;
-    top: 1470px;
-    left: 660px;
-    border: 4px solid #CE687C;
-    border-radius: 10px;
-    width: 600px;
-    height: 250px;  
-}
-.publicaciones-red .wish .wishList3 .tit-wish{
-    margin: auto;
-    margin-top: 0px;
-    text-align: center;
-    color: #fff;
-    font-family: 'Satisfy';
-    font-weight: bold;
-    font-size: 30px;
-    background-color:#CE687C ;
-    border-radius: 2px; 
-    
+.publicaciones-red .wish .wish1 .user-red,
+.publicaciones-red .wish .wish2 .user-red,
+.publicaciones-red .wish .wish3 .user-red {
+  margin: auto;
+  margin-top: 25px;
+  background-color: #ce687c;
+  border-radius: 8px;
+  width: 120px;
+  height: 60px;
+  text-align: center;
+  padding: 5px;
+  color: white;
+  font-family: 'Satisfy';
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.publicaciones-red .galeria{
-    margin: 10px 30px;
-    box-shadow: 0 2px 5px 0 #CE687C, 0 6px 20px rgb(0,0,0,0.19) ;
-    float: left;
-    width: 70px;   
-    
+.publicaciones-red .wish .wish2 {
+  margin: auto;
+  position: absolute;
+  top: 1095px;
+  left: 385px;
+  float: left;
+  border: 4px solid #ce687c;
+  border-radius: 10px;
+  width: 250px;
+  height: 300px;
 }
-.publicaciones-red .galeria img{
-   margin: auto;
-   width: 100%;
-   height: 65px;
+.publicaciones-red .wish .wish3 {
+  margin: auto;
+  position: absolute;
+  top: 1445px;
+  left: 385px;
+  float: left;
+  border: 4px solid #ce687c;
+  border-radius: 10px;
+  width: 250px;
+  height: 300px;
 }
-.publicaciones-red .galeria:hover{
-   border: 1px solid #C25D72;
-   transform: rotate(-5deg);
+.publicaciones-red .wish .wishList {
+  margin: auto;
+  position: absolute;
+  top: 770px;
+  left: 660px;
+  border: 4px solid #ce687c;
+  border-radius: 10px;
+  width: 600px;
+  height: 250px;
+}
+.publicaciones-red .wish .wishList .tit-wish {
+  margin: auto;
+  margin-top: 0px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Satisfy';
+  font-weight: bold;
+  font-size: 30px;
+  background-color: #ce687c;
+  border-radius: 2px;
+}
+.publicaciones-red .wish .wishList2 {
+  margin: auto;
+  position: absolute;
+  top: 1120px;
+  left: 660px;
+  border: 4px solid #ce687c;
+  border-radius: 10px;
+  width: 600px;
+  height: 250px;
+}
+.publicaciones-red .wish .wishList2 .tit-wish {
+  margin: auto;
+  margin-top: 0px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Satisfy';
+  font-weight: bold;
+  font-size: 30px;
+  background-color: #ce687c;
+  border-radius: 2px;
+}
+.publicaciones-red .wish .wishList3 {
+  margin: auto;
+  position: absolute;
+  top: 1470px;
+  left: 660px;
+  border: 4px solid #ce687c;
+  border-radius: 10px;
+  width: 600px;
+  height: 250px;
+}
+.publicaciones-red .wish .wishList3 .tit-wish {
+  margin: auto;
+  margin-top: 0px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Satisfy';
+  font-weight: bold;
+  font-size: 30px;
+  background-color: #ce687c;
+  border-radius: 2px;
 }
 
-.publicaciones-red{
-    background-color: #FFE6E9;
-    border-radius: 20px;
-    margin: auto;
-    margin-left: 350px;
-    margin-top: 70px;
-    width: 970px;
-    height: auto;
-    padding-bottom: 50px;
+.publicaciones-red .galeria {
+  margin: 10px 30px;
+  box-shadow: 0 2px 5px 0 #ce687c, 0 6px 20px rgb(0, 0, 0, 0.19);
+  float: left;
+  width: 70px;
+}
+.publicaciones-red .galeria img {
+  margin: auto;
+  width: 100%;
+  height: 65px;
+}
+.publicaciones-red .galeria:hover {
+  border: 1px solid #c25d72;
+  transform: rotate(-5deg);
 }
 
-.publicaciones-red .publi{
-    background-color: #CE687C;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 30px;
-    padding: 2px;
-    color: #fff;
-    font-family: 'Satisfy';
-    font-weight: bold;
+.publicaciones-red {
+  background-color: #ffe6e9;
+  border-radius: 20px;
+  margin: auto;
+  margin-left: 350px;
+  margin-top: 70px;
+  width: 970px;
+  height: auto;
+  padding-bottom: 50px;
 }
 
-.publicaciones-red .publi h2{
-    font-family: 'Satisfy';
+.publicaciones-red .publi {
+  background-color: #ce687c;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  padding: 2px;
+  color: #fff;
+  font-family: 'Satisfy';
+  font-weight: bold;
 }
 
-.usuario-red .datos-usuario p{
-    font-family: 'Satisfy';
+.publicaciones-red .publi h2 {
+  font-family: 'Satisfy';
 }
 
-.wish p{
-    font-family: 'Satisfy';
+.usuario-red .datos-usuario p {
+  font-family: 'Satisfy';
 }
 
-.text-user-red{
-    font-family: 'Satisfy';
-    color: black;
-    font-size: 20px;
+.wish p {
+  font-family: 'Satisfy';
+}
+
+.text-user-red {
+  font-family: 'Satisfy';
+  color: black;
+  font-size: 20px;
 }
