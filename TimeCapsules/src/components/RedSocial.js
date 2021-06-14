@@ -40,8 +40,10 @@ function RedSocial() {
               </section>
             </section>
             <div className="user-data">
-              <p><FontAwesomeIcon icon={faUser} /> {user?.displayName}</p>
-              <p><FontAwesomeIcon icon={faEnvelope} /> {user?.email}</p>
+              <p><FontAwesomeIcon icon={faUser} /> Usuario:</p>
+              <span className="text-user-red">{user?.displayName}</span>
+              <p><FontAwesomeIcon icon={faEnvelope} /> Correo:</p>
+              <span className="text-user-red">{user?.email}</span>
             </div>
           </div>
         </div>
