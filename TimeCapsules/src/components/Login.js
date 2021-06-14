@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGooglePlus, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { auth } from '../firebase'
+import { db, auth } from '../firebase'
 import '../static/Login.css'
 
 function Login() {
   const history = useHistory();
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [birth, setBirth] = useState('');
   const [password, setPassword] = useState('')
   const [username, setUsername] = useState('')
   const [left, setLeft] = useState(false)
@@ -34,6 +36,10 @@ function Login() {
         }).then(auth => {
           history.push("/")
         })
+        return db.collection('users').doc(auth.user.uid).set({
+          name: name,
+          birth: birth
+        })
       })
       .catch(error => alert(error.message))
   }
@@ -56,7 +62,9 @@ function Login() {
                   <span className="a social icon"><FontAwesomeIcon icon={faLinkedin} /></span>
                 </div>
                 <span className="span">O usa tu email para el registro</span>
+                <input id="signup-name" className="input" type="text" placeholder="Nombre completo" value={name} onChange={e => setName(e.target.value)} />
                 <input id="signup-username" className="input" type="text" placeholder="Username" value={username} onChange={e => setUsername(e.target.value)} />
+                <input id="signup-birth" className="input" type="date" placeholder="Fecha de Nacimiento" value={birth} onChange={e => setBirth(e.target.value)} />
                 <input id="signup-email" className="input" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
                 <input id="signup-password" className="input" type="password" placeholder="Contraseña" value={password} onChange={e => setPassword(e.target.value)} />
                 <button className="button" onClick={register}>Registrarme</button>

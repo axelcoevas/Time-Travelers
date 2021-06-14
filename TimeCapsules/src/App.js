@@ -4,7 +4,7 @@ import Home from "./components/Home"
 import Login from "./components//Login"
 import Footer from './components/Footer'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import { auth } from './firebase'
+import { db, auth } from './firebase'
 import { useSateValue } from './StateProvider'
 import CrearCapsula from './components/CrearCapsula';
 import RedSocialPerfil from './components/RedSocialPerfil';
@@ -20,11 +20,19 @@ function App() {
 
   useEffect(() => {
     auth.onAuthStateChanged(authUser => {
+      console.log("El usuario es", authUser)
       if (authUser) {
         dispatch({
           type: 'SET_USER',
           user: authUser
         })
+        db.collection('users').doc(authUser.uid).get()
+          .then((doc) => {
+            dispatch({
+              type: 'SET_USERDATA',
+              userdata: doc.data()
+            })
+          })
       } else {
         dispatch({
           type: 'SET_USER',

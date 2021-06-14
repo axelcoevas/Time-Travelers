@@ -8,7 +8,7 @@ import perfil from '../resources/perfil.jpg'
 import { useSateValue } from '../StateProvider';
 
 function RedSocialPerfil() {
-  const [{ user }] = useSateValue();
+  const [{ user, userData }] = useSateValue();
 
   return (
     <div className="Perfil">
@@ -19,13 +19,13 @@ function RedSocialPerfil() {
           </div>
           <div className="datos-usuario">
             <p>Nombre: </p>
-            <label>Gabriel</label>
+            <label>{userData?.name}</label>
             <p>Usuario: </p>
             <label>{user?.displayName}</label>
             <p>Correo:</p>
             <label>{user?.email}</label>
             <p>Fecha de Nacimiento: </p>
-            <label>16 - Julio - 1999</label>
+            <label>{userData?.birth}</label>
           </div>
         </div>
         <div className="publicaciones-perfil">
