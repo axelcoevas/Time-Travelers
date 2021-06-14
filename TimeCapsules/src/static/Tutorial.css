@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.conteiner-tuto{
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 8%;
+    width: 90%;
+    height: auto;
+    padding-bottom: 10%;
+
+}
+.conteiner-tuto .video-tuto iframe{
+    margin-top: 5px;
+}
+.conteiner-tuto .video-tuto{
+    width: 48%;
+    height: 330px;
+    border: 4px dashed #CE687C;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+/*  h3 titulo  */
+.titulo-tuto h3{
+    margin: auto;
+    width: 70%;
+    background-color: #CE687C;
+    text-align: center;
+    font-family: "Satisfy";
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    border-radius: 7px;
+
+}
+
+.conteiner-tuto .conte-tuto {
+    font-family: "Open Sans", sans-serif;
+    background-color: transparent;
+    margin:auto;
+    width: 70%;
+    border: 7px solid #CE687C;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.conteiner-tuto .conte-tuto .TE h1,h2{
+    font-family: "Satisfy";
+    font-weight: bold;
+    text-align: center;
+    color: #CE687C;
+}
+.conteiner-tuto .conte-tuto .TC h3{
+    font-family: "Satisfy";
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    color: #CE687C;
+}
+.conteiner-tuto .conte-tuto .TCC{
+    font-family: "Satisfy";
+    font-weight: bold;
+    font-size: 25px;
+    color: #CE687C;
+}
+
+.conteiner-tuto .conte-tuto textarea{
+    width: 100%;
+      height: 200px;
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 100px;
+      max-height: 300px;
+      margin-bottom: 15px;
+      margin-top: 30px;
+      border: 2px solid #cecece;
+      border-radius: 5px;
+      padding: 15px 20px;
+      font-size: 20px;
+      color: #a4a4a4;
+      outline: none;
+  }
+  .conteiner-tuto .conte-tuto textarea:focus{
+    border: 5px solid #C25D72;
+  }
+
+  .conteiner-tuto .conte-tuto button{
+    padding: 10px 40px;
+    border: 3px solid white;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    background-color: #C25D72;
+    outline: none;
+    transition: all 300ms;
+    border-radius: 7px;
+  }
+  .conteiner-tuto .conte-tuto button:hover{
+    background: #fdb4bf;
+    color: white;
+  }
+
+  .conteiner-tuto .conte-tuto .btn-env-tuto{
+    text-align: center;
+  }
