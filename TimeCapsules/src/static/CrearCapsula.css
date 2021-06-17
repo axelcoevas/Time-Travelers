@@ -8,16 +8,31 @@
 
 
 .sub_titulo {
-    font-size: 25px;
+  font-weight: bold;
     margin-top: 100px;
     font-weight: bold;
     color: #C25D72;
 }
 
+.sub_portada{
+  font-size: 25px;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #C25D72;
+}
+
+
 .centrarBoton{
-    display: flex;
     width: 100%;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.sub_vr{
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #C25D72;
 }
 
 .Dropzone{

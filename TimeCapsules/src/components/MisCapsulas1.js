@@ -1,9 +1,9 @@
 import React from 'react';
 import '../static/MisCapsulas.css'
-import capsule1 from '../resources/vr.jpg'
+import capsule1 from '../resources/mini mai.jpg'
 import { Link } from 'react-router-dom'
 
-function MisCapsulas() {
+function MisCapsulas1() {
   return (
     <div className="MisCapsulas">
       <div className="cont-all-misCapsulas">
@@ -11,17 +11,17 @@ function MisCapsulas() {
           <h3>Mis Capsulas</h3>
         </div>
         <div className="cont-misCapsulas">
-          <div className="container-misCapsulas">
-            {/* 
+          <div className="container-misCapsulas"> 
             <div className="item-misCapsulas">
               <span className="etiquetaA">
                 <img src={capsule1} alt="" className="item-img" />
                 <div className="item-text">
-                  <h3>Capsula 1</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                  <h3>Mi Primer Cápsula</h3>
+                  <p>Recuerdos Personales de la infancia y juventud</p>
                 </div>
               </span>
             </div> 
+            {/*
             <div className="item-misCapsulas">
               <span className="etiquetaA">
                 <img src={capsule1} alt="" className="item-img" />
@@ -51,4 +51,4 @@ function MisCapsulas() {
   );
 }
 
-export default MisCapsulas;
+export default MisCapsulas1;

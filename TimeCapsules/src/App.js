@@ -14,6 +14,7 @@ import MisCapsulas from './components/MisCapsulas';
 import HeaderSocialMedia from './components/HeaderSocialMedia';
 import CrearMiniCapsula from './components/CrearMiniCapsula';
 import Tutorial from './components/Tutorial';
+import MisCapsulas1 from './components/MisCapsulas1';
 
 function App() {
   // eslint-disable-next-line
@@ -63,6 +64,10 @@ function App() {
           <Route path="/RedSocialPerfil">
             <HeaderSocialMedia />
             <RedSocialPerfil />
+          </Route>
+          <Route path="/MisCapsulas1">
+            <Header />
+            <MisCapsulas1 />
           </Route>
           <Route path="/MisCapsulas">
             <Header />

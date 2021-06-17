@@ -12,6 +12,9 @@ import samsung from '../resources/samsung.jpg'
 import huawei from '../resources/huaawei.png'
 import sony from '../resources/sony.webp'
 import adidas from '../resources/adidas.jpg'
+import ismael from '../resources/ismael.jpg'
+import axel from '../resources/axel.jpg'
+import gabriel from '../resources/gabriel.jpg'
 import { useSateValue } from '../StateProvider';
 
 function RedSocial() {
@@ -53,7 +56,7 @@ function RedSocial() {
           <div className="wish">
             <div className="wish1">
               <div className="foto">
-                <img src={defaultProfilePicture} alt="User" width="112px" height="112px" />
+                <img src={gabriel} alt="User" width="112px" height="112px" />
               </div>
               <div className="user-red">
                 <p>GabrielA</p>
@@ -88,7 +91,7 @@ function RedSocial() {
           <div className="wish">
             <div className="wish2">
               <div className="foto">
-                <img src={defaultProfilePicture} alt="User" width="112px" height="112px" />
+                <img src={ismael} alt="User" width="112px" height="112px" />
               </div>
               <div className="user-red">
                 <p>IsmaelO</p>
@@ -123,7 +126,7 @@ function RedSocial() {
           <div className="wish">
             <div className="wish3">
               <div className="foto">
-                <img src={defaultProfilePicture} alt="User" width="112px" height="112px" />
+                <img src={axel} alt="User" width="112px" height="112px" />
               </div>
               <div className="user-red">
                 <p>AxelC</p>
