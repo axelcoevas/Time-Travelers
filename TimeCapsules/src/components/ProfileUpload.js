@@ -37,7 +37,7 @@ const ProfileUpload = () => {
   return (
     <div className="upload-container">
       <div className="inputs-container">
-        <progress value={progress} max="100"></progress>
+        <progress className="progress" value={progress} max="100"></progress>
         <input type="file" accept="image/*" onChange={handleUpload} />
       </div>
     </div>

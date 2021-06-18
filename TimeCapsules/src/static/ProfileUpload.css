@@ -12,24 +12,22 @@
   width: 300px;
 }
 
-.upload-container .inputs-container progress{
-  width: 315px;
+.upload-container .inputs-container progress {
+  width: 100%;
 }
 
-.upload-container .inputs-container input[type="file"]{
+.upload-container .inputs-container input[type='file'] {
   position: relative;
   display: inline-block;
 }
 
-
-.upload-container .inputs-container input[type="file"]::before{
-  background-color: #FFC1D5;
+.upload-container .inputs-container input[type='file']::before {
+  background-color: #ffc1d5;
   color: black;
-  display: flex;            
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 3px;
-  content: 'Seleccionar'; /* testo por defecto */
   position: absolute;
   left: 0;
   right: 0;
@@ -38,7 +36,10 @@
   width: 100%;
 }
 
-
-.upload-container .inputs-container input[type="file"]::before{
+.upload-container .inputs-container input[type='file']::before {
   content: 'Subir Imagen de Perfil';
+}
+
+.progress {
+  width: 100%;
 }
