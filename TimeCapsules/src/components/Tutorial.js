@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
+import swal from 'sweetalert'
 import { db } from '../firebase'
 import '../static/Tutorial.css'
 
@@ -10,6 +12,7 @@ const Tutorial = () => {
   const [q5, setQ5] = useState();
   const [q6, setQ6] = useState();
   const [comments, setComments] = useState('');
+  const history = useHistory();
 
   const submitForm = () => {
     if (q1 && q2 && q3 && q4 && q5 && q6) {
@@ -24,12 +27,19 @@ const Tutorial = () => {
           question6: q6,
           comments: comments
         })
-        .then((docRef) => {
-          console.log("Escrito con éxito, id: ", docRef.id)
-          cleanForm()
+        .then(() => {
+          swal({
+            title: "Bien!",
+            text: "La encuesta se ha enviado con éxito",
+            icon: "success",
+            button: ";)",
+          })
+            .then(() => {
+              history.push("/Tutorial")
+            })
         })
         .catch((error) => {
-          console.log("Ocurrió un error: ", error)
+          swal("Ha ocurrido un error")
         })
 
     } else {
