@@ -1,10 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
+import swal from 'sweetalert'
+import { db } from '../firebase'
 import create from '../resources/crea.jpg'
 import wish from '../resources/wish.jpg'
 import vr from '../resources/vr.jpg'
 import '../static/Home.css'
 
 function Home() {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [message, setMessage] = useState();
+  const history = useHistory();
+
+  const submitForm = () => {
+    if (name && email && message) {
+      return db
+        .collection('contact')
+        .add({
+          name: name,
+          email: email,
+          message: message
+        })
+        .then(() => {
+          swal({
+            title: "Bien!",
+            text: "Tu mensaje se ha enviado con éxito",
+            icon: "success",
+            button: ";)",
+          })
+            .then(() => {
+              history.go(0)
+            })
+        })
+        .catch((error) => {
+          swal("Ha ocurrido un error: ", error)
+        })
+    } else {
+      swal("Debes llenar todo el formulario")
+    }
+  }
+
   return (
     <div className="home">
       <section className="main-home">
@@ -59,10 +95,10 @@ function Home() {
           <div className="contenedor-home">
             <h3 className="titulo">Contacto</h3>
             <form className="formulario" action="">
-              <input type="text" name="nombre" id="nombre" required placeholder="Nombre" />
-              <input type="email" name="email" id="email" required placeholder="Correo" />
-              <textarea name="mensaje" id="mensaje" placeholder="Mensaje:"></textarea>
-              <input type="submit" value="Enviar" className="boton" />
+              <input type="text" name="nombre" id="nombre" required placeholder="Nombre" onChange={e => setName(e.target.value)} />
+              <input type="email" name="email" id="email" required placeholder="Correo" onChange={e => setEmail(e.target.value)} />
+              <textarea name="mensaje" id="mensaje" placeholder="Mensaje:" onChange={e => setMessage(e.target.value)} ></textarea>
+              <input type="button" value="Enviar" className="boton" onSubmit={submitForm} />
             </form>
           </div>
         </section>

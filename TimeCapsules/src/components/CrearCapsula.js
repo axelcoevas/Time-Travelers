@@ -4,7 +4,6 @@ import 'react-dropzone-uploader/dist/styles.css'
 import Dropzone from 'react-dropzone-uploader'
 // eslint-disable-next-line
 import { Link } from 'react-router-dom'
-import { firebase, auth, db } from '../firebase'
 
 const MyUploader = () => {
   const getUploadParams = ({ meta }) => { return { url: 'https://httpbin.org/post' } }
@@ -29,7 +28,7 @@ function CrearCapsula() {
       <div className="contenedor-crearCapsula">
         <form className="formulario">
           <p className="sub_titulo">Crear tu Cápsula del Tiempo: <input type="text" name="titulo" id="titulo" /></p>
-          <p className="sub_portada">Imagen de portada para cápsula: <br/><input type="file" name="portada" id="portada" /></p>
+          <p className="sub_portada">Imagen de portada para cápsula: <br /><input type="file" name="portada" id="portada" /></p>
           <p className="sub_mensaje">Sube aquí tus archivos</p>
           <div className="Dropzone">
             <MyUploader />
@@ -40,9 +39,9 @@ function CrearCapsula() {
           <input className="fecha" type="date" name="day" />
           <p className="sub_correo">Ingrese los Correos de sus Destinatarios:</p>
           <input type="email" className="correos" name="correos" id="correos" placeholder="Agregar Correo:" /><br />
-          <p className="sub_vr"><input type="checkbox" id="vr" value="acceptvr"/> Deseo implementar Realidad Virtual</p>
+          <p className="sub_vr"><input type="checkbox" id="vr" value="acceptvr" /> Deseo implementar Realidad Virtual</p>
           <div className="centrarBoton">
-            <Link to="./MisCapsulas1"><input className="BotonEnv" type="submit" value="Enviar Capsula"/></Link>
+            <Link to="./MisCapsulas1"><input className="BotonEnv" type="submit" value="Enviar Capsula" /></Link>
           </div>
         </form>
       </div>

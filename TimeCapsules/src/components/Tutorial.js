@@ -32,14 +32,14 @@ const Tutorial = () => {
             title: "Bien!",
             text: "La encuesta se ha enviado con éxito",
             icon: "success",
-            button: ";)",
+            button: ";)"
           })
             .then(() => {
               history.go(0)
             })
         })
         .catch((error) => {
-          swal("Ha ocurrido un error")
+          swal("Ha ocurrido un error: ", error)
         })
 
     } else {
