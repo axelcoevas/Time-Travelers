@@ -35,7 +35,7 @@ const Tutorial = () => {
             button: ";)",
           })
             .then(() => {
-              history.push("/Tutorial")
+              history.go(0)
             })
         })
         .catch((error) => {
@@ -43,7 +43,7 @@ const Tutorial = () => {
         })
 
     } else {
-      console.log("Debes contestar todas las preguntas")
+      swal("Debes llenar todas las respuestas de opción múltiple")
     }
   }
 
@@ -85,22 +85,22 @@ const Tutorial = () => {
               </div>
               <div>
                 <label>
-                  <input type="radio" name="pregunta1" id="pregunta1a" value="1" onChange={e => setQ1(e.target.value)} /> Pdf,Docs,Imagenes,Videos
+                  <input type="radio" name="pregunta1" id="pregunta1a" value="Pdf,Docs,Imagenes,Videos" onChange={e => setQ1(e.target.value)} /> Pdf,Docs,Imagenes,Videos
                 </label>
               </div>
               <div>
                 <label>
-                  <input type="radio" name="pregunta1" id="preguntab" value="2" onChange={e => setQ1(e.target.value)} /> Solo imagenes
+                  <input type="radio" name="pregunta1" id="preguntab" value="Solo imagenes" onChange={e => setQ1(e.target.value)} /> Solo imagenes
                 </label>
               </div>
               <div>
                 <label>
-                  <input type="radio" name="pregunta1" id="preguntac" value="3" onChange={e => setQ1(e.target.value)} /> Solo videos e imagenes
+                  <input type="radio" name="pregunta1" id="preguntac" value="Solo videos e imagenes" onChange={e => setQ1(e.target.value)} /> Solo videos e imagenes
                 </label>
               </div>
               <div>
                 <label>
-                  <input type="radio" name="pregunta1" id="preguntad" value="4" onChange={e => setQ1(e.target.value)} /> Cualquier archivo
+                  <input type="radio" name="pregunta1" id="preguntad" value="Cualquier archivo" onChange={e => setQ1(e.target.value)} /> Cualquier archivo
                 </label>
               </div>
             </section>
@@ -111,12 +111,12 @@ const Tutorial = () => {
               </div>
               <div>
                 <label>
-                  <input type="radio" name="pregunta2" id="pregunta1a" value="1" onChange={e => setQ2(e.target.value)} /> Fecha de Creacion
+                  <input type="radio" name="pregunta2" id="pregunta1a" value="Fecha de Creacion" onChange={e => setQ2(e.target.value)} /> Fecha de Creacion
                 </label>
               </div>
               <div>
                 <label>
-                  <input type="radio" name="pregunta2" id="preguntab" value="2" onChange={e => setQ2(e.target.value)} /> Fecha de Entrega
+                  <input type="radio" name="pregunta2" id="preguntab" value="Fecha de Entrega" onChange={e => setQ2(e.target.value)} /> Fecha de Entrega
                 </label>
               </div>
             </section>
@@ -144,7 +144,7 @@ const Tutorial = () => {
               </div>
               <div>
                 <label>
-                  <input type="radio" name="pregunta3" id="preguntac" value="3" onChange={e => setQ3(e.target.value)} /> mas de 2
+                  <input type="radio" name="pregunta3" id="preguntac" value="mas de 2" onChange={e => setQ3(e.target.value)} /> mas de 2
                 </label>
               </div>
             </section>
@@ -161,17 +161,17 @@ const Tutorial = () => {
               </div>
               <div>
                 <label>
-                  <input type="radio" name="pregunta4" id="pregunta1a" value="1" onChange={e => setQ4(e.target.value)} /> Si
+                  <input type="radio" name="pregunta4" id="pregunta1a" value="Si" onChange={e => setQ4(e.target.value)} /> Si
                 </label>
               </div>
               <div>
                 <label>
-                  <input type="radio" name="pregunta4" id="preguntab" value="2" onChange={e => setQ4(e.target.value)} /> No
+                  <input type="radio" name="pregunta4" id="preguntab" value="No" onChange={e => setQ4(e.target.value)} /> No
                 </label>
               </div>
               <div>
                 <label>
-                  <input type="radio" name="pregunta4" id="preguntac" value="3" onChange={e => setQ4(e.target.value)} /> N/A
+                  <input type="radio" name="pregunta4" id="preguntac" value="N/A" onChange={e => setQ4(e.target.value)} /> N/A
                 </label>
               </div>
             </section>
@@ -191,12 +191,12 @@ const Tutorial = () => {
                   </div>
                   <div>
                     <select id="pregunta5" name="pregunta5" onChange={e => setQ5(e.target.value)}>
-                      <option value="1">Muy Buena</option>
-                      <option value="2">Buena</option>
-                      <option value="3">Regular</option>
-                      <option value="4">Mala</option>
-                      <option value="5">Muy Mala</option>
-                      <option value="6">No Responde</option>
+                      <option value="Muy Buena">Muy Buena</option>
+                      <option value="Buena">Buena</option>
+                      <option value="Regular">Regular</option>
+                      <option value="Mala">Mala</option>
+                      <option value="Muy Mala">Muy Mala</option>
+                      <option value="No Responde">No Responde</option>
                     </select>
                   </div>
                 </section>
@@ -210,12 +210,12 @@ const Tutorial = () => {
                   </div>
                   <div>
                     <select id="pregunta6" onChange={e => setQ6(e.target.value)}>
-                      <option value="5">Muy Buena</option>
-                      <option value="4">Buena</option>
-                      <option value="3">Regular</option>
-                      <option value="2">Mala</option>
-                      <option value="1">Muy Mala</option>
-                      <option value="0">No Responde</option>
+                      <option value="Muy Buena">Muy Buena</option>
+                      <option value="Buena">Buena</option>
+                      <option value="Regular">Regular</option>
+                      <option value="Mala">Mala</option>
+                      <option value="Muy Mala">Muy Mala</option>
+                      <option value="No Responde">No Responde</option>
                     </select>
                   </div>
                 </section>
